@@ -92,6 +92,9 @@
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/main.cpp">
 			<Option target="DataStructureWork"/>
 		</Unit>
+		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/testFunction.h">
+			<Option target="DataStructureWork"/>
+		</Unit>
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
