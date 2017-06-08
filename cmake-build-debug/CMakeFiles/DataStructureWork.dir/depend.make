@@ -3,6 +3,7 @@
 
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../Component.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../DenseGraph.h
+CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../Path.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../ReadGraph.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../SparseGraph.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../main.cpp

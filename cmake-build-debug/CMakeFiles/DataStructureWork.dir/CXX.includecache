@@ -20,6 +20,16 @@ vector
 cassert
 -
 
+G:/zhangsiqi/Github/DataStructureWork/Path.h
+iostream
+-
+cassert
+-
+vector
+-
+stack
+-
+
 G:/zhangsiqi/Github/DataStructureWork/ReadGraph.h
 iostream
 -
@@ -59,4 +69,6 @@ ReadGraph.h
 G:/zhangsiqi/Github/DataStructureWork/ReadGraph.h
 Component.h
 G:/zhangsiqi/Github/DataStructureWork/Component.h
+Path.h
+G:/zhangsiqi/Github/DataStructureWork/Path.h
 
