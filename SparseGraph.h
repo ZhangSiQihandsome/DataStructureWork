@@ -65,6 +65,40 @@ public:
         }
         return false;
     }
+
+    class adjIterator {
+
+    private:
+        SparseGraph &G; // 存儲傳入進來的圖
+        int v;  // 存儲傳入進來的頂點
+        int index; // 當前索引的位置
+    public:
+        adjIterator(SparseGraph &graph, int v) : G(graph) {
+            this->v = v;
+            this->index = 0;
+        }
+
+        int begin() {
+            index = 0;
+            if (G.g[v].size()) {
+                return G.g[v][index];
+            }
+            return -1;
+        }
+
+        int next() {
+            index++;
+            if (index < G.g[v].size()) {
+                return G.g[v][index];
+            }
+            return -1;
+        }
+
+        bool end() {
+            return index >= G.g[v][index];
+        }
+    };
+
 };
 
 
