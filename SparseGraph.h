@@ -72,7 +72,7 @@ public:
     public:
         adjIterator(SparseGraph &graph, int v) : G(graph) {
             this->v = v;
-            this->index = 0;
+            this->index = -1;
         }
 
         int begin() {

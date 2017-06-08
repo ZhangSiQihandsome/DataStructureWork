@@ -41,7 +41,7 @@ public:
 
     void addEdge(int v, int w) {
         assert(v >= 0 && v < n);
-        assert(m >= 0 && m < n);
+        assert(w >= 0 && w < n);
 
         // 返回true 代表已经有边了  直接结束函数
         if (hasEdge(v, w)) {
@@ -49,7 +49,7 @@ public:
         }
 
         g[v][w] = true;
-        if (v != w && !directed) {
+        if (!directed) {
             g[w][v] = true;
         }
         m++;  // 边数++
@@ -57,9 +57,41 @@ public:
 
     bool hasEdge(int v, int w) {
         assert(v >= 0 && v < n);
-        assert(m >= 0 && m < n);
+        assert(w >= 0 && w < n);
         return g[v][w];
     }
+
+    class adjIterator {
+
+    private:
+        DenseGraph &G;
+        int v;
+        int index;
+
+    public:
+        adjIterator(DenseGraph &g, int v) : G(g) {
+            this->v = v;
+            this->index = -1;
+        }
+
+        int begin() {
+            index = -1;
+            return next();
+        }
+
+        int next() {
+            // index 先加1 然后遍历小于总顶点数的次数
+            for (index += 1; index < G.V(); index++)
+                // 如果其中一个顶点为true 则返回顶点索引
+                if (G.g[v][index])
+                    return index;
+            return -1;
+        }
+
+        bool end() {
+            return index >= G.V();
+        }
+    };
 };
 
 
