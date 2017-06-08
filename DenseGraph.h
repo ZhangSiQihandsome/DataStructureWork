@@ -49,7 +49,7 @@ public:
         }
 
         g[v][w] = true;
-        if (!directed) {
+        if (v != w && !directed) {
             g[w][v] = true;
         }
         m++;  // 边数++

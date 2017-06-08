@@ -44,12 +44,9 @@ public:
         assert(v >= 0 && v < n);
         assert(w >= 0 && w < n);
 
-        if (hasEdge(v, w))
-            return;
-
-        g[v][w] = w;
-        if (!directed) {
-            g[w][v] = v;
+        g[v].push_back(w);
+        if (v != w && !directed) {
+            g[w].push_back(v);
         }
         m++;
     }
@@ -80,22 +77,20 @@ public:
 
         int begin() {
             index = 0;
-            if (G.g[v].size()) {
+            if (G.g[v].size())
                 return G.g[v][index];
-            }
             return -1;
         }
 
         int next() {
             index++;
-            if (index < G.g[v].size()) {
+            if (index < G.g[v].size())
                 return G.g[v][index];
-            }
             return -1;
         }
 
         bool end() {
-            return index >= G.g[v][index];
+            return index >= G.g[v].size();
         }
     };
 
