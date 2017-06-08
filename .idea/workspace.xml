@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25eba4d9-6420-4aef-89b7-5fa68f22155a" name="Default" comment="Add a little change of Graphfile">
+    <list default="true" id="25eba4d9-6420-4aef-89b7-5fa68f22155a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -334,7 +334,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496904712674</updated>
-      <workItem from="1496904715889" duration="1830000" />
+      <workItem from="1496904715889" duration="1845000" />
     </task>
     <task id="LOCAL-00001" summary="Add namespace in main.cpp">
       <created>1496904928145</created>
@@ -378,11 +378,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496906482875</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add a little change workspace.xml">
+      <created>1496906560590</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1496906560590</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1830000" />
+    <option name="totallyTimeSpent" value="1845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="979" y="0" width="948" height="1087" extended-state="0" />
@@ -422,7 +429,8 @@
     <MESSAGE value="Add DenseGraph.h in CMakeLists.txt" />
     <MESSAGE value="Add SparseGraph.h" />
     <MESSAGE value="Add a little change of Graphfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a little change of Graphfile" />
+    <MESSAGE value="Add a little change workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a little change workspace.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
