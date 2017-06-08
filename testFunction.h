@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <time.h>
+#include "ShortestPath.h"
 #include "SparseGraph.h"
 #include "DenseGraph.h"
 #include "ReadGraph.h"
@@ -98,8 +99,29 @@ void testPath() {
 
     // 原点是 0
     Path<SparseGraph> dfs(g, 0);
+    cout << "DFS: " << endl;
+    for (int i = 0; i < 7; ++i) {
+        dfs.showPath(i); // 展示原点到 5 的路径
+    }
+
+}
+
+void testShortestPath() {
+    string filename = "testG2.txt";
+    SparseGraph g = SparseGraph(7, false);
+    ReadGraph<SparseGraph> readGraph(g, filename);
+    g.show();
+    cout << endl;
+
+    Path<SparseGraph> dfs(g, 0);
     cout << "DFS: ";
-    dfs.showPath(6); // 展示原点到 5 的路径
+    dfs.showPath(6);
+
+    ShortestPath<SparseGraph> bfs(g, 0);
+    cout << "BFS: " << endl;
+    for (int i = 0; i < 7; ++i) {
+        bfs.showPath(i);
+    }
 
 }
 
