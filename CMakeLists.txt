@@ -3,5 +3,5 @@ project(DataStructureWork)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp DenseGraph.h SparseGraph.h)
+set(SOURCE_FILES main.cpp DenseGraph.h SparseGraph.h ReadGraph.h)
 add_executable(DataStructureWork ${SOURCE_FILES})
