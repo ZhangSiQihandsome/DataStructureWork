@@ -4,4 +4,5 @@
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../DenseGraph.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../SparseGraph.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../testFunction.h
 
