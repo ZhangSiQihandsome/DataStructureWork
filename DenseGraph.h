@@ -61,6 +61,7 @@ public:
         return g[v][w];
     }
 
+    // 打印出邻接矩阵中的边
     void show() {
         for (int i = 0; i < n; ++i) {
             cout << "vertex " << i << ":\t";

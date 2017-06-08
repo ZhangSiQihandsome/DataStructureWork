@@ -5,14 +5,13 @@
 #ifndef DATASTRUCTUREWORK_TESTFUNCTION_H
 #define DATASTRUCTUREWORK_TESTFUNCTION_H
 
-void testIteratorSparseGraph();
-
 #include <iostream>
 #include <time.h>
 #include "SparseGraph.h"
 #include "DenseGraph.h"
 #include "ReadGraph.h"
 #include "Component.h"
+#include "Path.h"
 
 void testIteratorDenseGraph() {
     int N = 20;
@@ -72,6 +71,7 @@ void testReadGraph() {
 }
 
 void testComponent() {
+    void testIteratorSparseGraph();
     // TestG1.txt
     string filename1 = "testG1.txt";
     SparseGraph g1 = SparseGraph(13, false);
@@ -82,11 +82,25 @@ void testComponent() {
 
     // TestG2.txt
     string filename2 = "testG2.txt";
-    SparseGraph g2 = SparseGraph(6, false);
+    SparseGraph g2 = SparseGraph(7, false);
     ReadGraph<SparseGraph> readGraph2(g2, filename2);
     Component<SparseGraph> component2(g2);
     cout << "TestG2.txt, Component Count: " << component2.ccoutn() << endl;
     cout << endl;
+}
+
+void testPath() {
+    string filename = "testG2.txt";
+    SparseGraph g = SparseGraph(7, false);
+    ReadGraph<SparseGraph> readGraph(g, filename);
+    g.show();
+    cout << endl;
+
+    // 原点是 0
+    Path<SparseGraph> dfs(g, 0);
+    cout << "DFS: ";
+    dfs.showPath(6); // 展示原点到 5 的路径
+
 }
 
 #endif //DATASTRUCTUREWORK_TESTFUNCTION_H

@@ -13,6 +13,11 @@ int main() {
     /*testReadGraph();*/
 
     // testComponent
-    testComponent();
+//    testComponent();
+
+    //testPath
+    testPath();
+
+
     return 0;
 }

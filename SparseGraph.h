@@ -63,6 +63,7 @@ public:
         return false;
     }
 
+    // 打印出邻接表中的边
     void show() {
         for (int i = 0; i < n; ++i) {
             cout << "vertex " << i << ":\t";
