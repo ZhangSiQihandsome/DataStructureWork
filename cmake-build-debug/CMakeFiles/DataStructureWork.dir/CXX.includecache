@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+G:/zhangsiqi/Github/DataStructureWork/Component.h
+iostream
+-
+cassert
+-
+
 G:/zhangsiqi/Github/DataStructureWork/DenseGraph.h
 iostream
 -
@@ -51,4 +57,6 @@ DenseGraph.h
 G:/zhangsiqi/Github/DataStructureWork/DenseGraph.h
 ReadGraph.h
 G:/zhangsiqi/Github/DataStructureWork/ReadGraph.h
+Component.h
+G:/zhangsiqi/Github/DataStructureWork/Component.h
 

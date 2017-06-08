@@ -10,6 +10,9 @@ int main() {
     testIteratorSparseGraph();*/
 
     // testReadGraph
-    testReadGraph();
+    /*testReadGraph();*/
+
+    // testComponent
+    testComponent();
     return 0;
 }

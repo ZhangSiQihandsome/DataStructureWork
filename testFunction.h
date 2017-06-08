@@ -12,6 +12,7 @@ void testIteratorSparseGraph();
 #include "SparseGraph.h"
 #include "DenseGraph.h"
 #include "ReadGraph.h"
+#include "Component.h"
 
 void testIteratorDenseGraph() {
     int N = 20;
@@ -68,6 +69,24 @@ void testReadGraph() {
     DenseGraph g2(13, false);
     ReadGraph<DenseGraph> readGraph2(g2, filename);
     g2.show();
+}
+
+void testComponent() {
+    // TestG1.txt
+    string filename1 = "testG1.txt";
+    SparseGraph g1 = SparseGraph(13, false);
+    ReadGraph<SparseGraph> readGraph1(g1, filename1);
+    Component<SparseGraph> component1(g1);
+    cout << "TestG1.txt Component Count: " << component1.ccoutn() << endl;
+    cout << endl;
+
+    // TestG2.txt
+    string filename2 = "testG2.txt";
+    SparseGraph g2 = SparseGraph(6, false);
+    ReadGraph<SparseGraph> readGraph2(g2, filename2);
+    Component<SparseGraph> component2(g2);
+    cout << "TestG2.txt, Component Count: " << component2.ccoutn() << endl;
+    cout << endl;
 }
 
 #endif //DATASTRUCTUREWORK_TESTFUNCTION_H

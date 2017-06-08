@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/Component.h">
+			<Option target="DataStructureWork"/>
+		</Unit>
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/DenseGraph.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
