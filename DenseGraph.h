@@ -61,6 +61,15 @@ public:
         return g[v][w];
     }
 
+    void show() {
+        for (int i = 0; i < n; ++i) {
+            cout << "vertex " << i << ":\t";
+            for (int j = 0; j < g[i].size(); ++j)
+                cout << g[i][j] << "   ";
+            cout << endl;
+        }
+    }
+
     class adjIterator {
 
     private:

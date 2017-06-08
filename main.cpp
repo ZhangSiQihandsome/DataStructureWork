@@ -4,8 +4,12 @@
 using namespace std;
 
 int main() {
-    testIteratorDenseGraph();
+    // testIterator
+    /*testIteratorDenseGraph();
     cout << "--------------" << endl;
-    testIteratorSparseGraph();
+    testIteratorSparseGraph();*/
+
+    // testReadGraph
+    testReadGraph();
     return 0;
 }
