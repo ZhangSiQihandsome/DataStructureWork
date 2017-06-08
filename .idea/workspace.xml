@@ -49,8 +49,8 @@
       <file leaf-file-name="SparseGraph.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SparseGraph.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="734">
-              <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+            <state relative-caret-position="874">
+              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
               <folding>
                 <element signature="e#125#144#0" expanded="true" />
               </folding>
@@ -391,11 +391,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496907580744</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="SparseGraph complete">
+      <created>1496908210232</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1496908210232</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3365000" />
+    <option name="totallyTimeSpent" value="3673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1013" y="0" width="914" height="1087" extended-state="0" />
@@ -437,6 +444,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -475,10 +492,13 @@
     <MESSAGE value="Add a little change of Graphfile" />
     <MESSAGE value="Add a little change workspace.xml" />
     <MESSAGE value="DenseGraph complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="DenseGraph complete" />
+    <MESSAGE value="SparseGraph complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="SparseGraph complete" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -590,8 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SparseGraph.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        <state relative-caret-position="874">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding>
             <element signature="e#125#144#0" expanded="true" />
           </folding>

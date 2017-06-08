@@ -40,12 +40,12 @@ public:
     int E() { return m; }
 
     void addEdge(int v, int w) {
+
         assert(v >= 0 && v < n);
         assert(w >= 0 && w < n);
 
-        if (hasEdge(v, w)) {
+        if (hasEdge(v, w))
             return;
-        }
 
         g[v][w] = w;
         if (!directed) {
@@ -55,10 +55,13 @@ public:
     }
 
     bool hasEdge(int v, int w) {
+
+        assert(v >= 0 && v < n);
+        assert(w >= 0 && w < n);
+
         for (int a : g[v]) {
-            if (a == w) {
+            if (a == w)
                 return true;
-            }
         }
         return false;
     }
