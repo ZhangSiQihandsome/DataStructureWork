@@ -5,7 +5,6 @@ CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../Component.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../DenseGraph.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../Edge.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../IndexMinHeap.h
-
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../KruskalMST.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../LazyPrimMST.h
 CMakeFiles/DataStructureWork.dir/main.cpp.obj: ../MainHeap.h
