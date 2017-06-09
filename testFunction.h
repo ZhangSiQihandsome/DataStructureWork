@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <time.h>
+#include <iomanip>
 #include "ShortestPath.h"
 #include "SparseGraph.h"
 #include "DenseGraph.h"
@@ -14,6 +15,9 @@
 #include "Component.h"
 #include "Path.h"
 
+// 有权图之前的测试函数
+
+/*
 void testIteratorDenseGraph() {
     int N = 20;
     int M = 100;
@@ -123,6 +127,25 @@ void testShortestPath() {
         bfs.showPath(i);
     }
 
+}*/
+
+// 有权图之后的测试函数 (添加 Edge.h)
+void testWeightGraph() {
+    string filename = "testG3.txt";
+    int V = 8;
+    cout << fixed << setprecision(2); // 设置输出的小数后两位
+
+    // Test Weight Dense Graph
+    DenseGraph<double> g1 = DenseGraph<double>(V, false);
+    ReadGraph<DenseGraph<double>, double> readGraph1(g1, filename);
+    g1.show();
+    cout << endl;
+
+    // Test Weight Sparse Graph
+    SparseGraph<double> g2 = SparseGraph<double>(V, false);
+    ReadGraph<SparseGraph<double>, double> readGraph2(g2, filename);
+    g2.show();
+    cout << endl;
 }
 
 #endif //DATASTRUCTUREWORK_TESTFUNCTION_H

@@ -4,10 +4,12 @@
 using namespace std;
 
 int main() {
-    // testIterator
-    /*testIteratorDenseGraph();
-    cout << "--------------" << endl;
-    testIteratorSparseGraph();*/
+
+    // 有权图之前的测试函数
+/*    // testIterator
+//    testIteratorDenseGraph();
+//    cout << "--------------" << endl;
+//    testIteratorSparseGraph();
 
     // testReadGraph
 //    testReadGraph();
@@ -16,9 +18,15 @@ int main() {
 //    testComponent();
 
     //testPath
-    testPath();
+//    testPath();
 
     // testShortestPath
-//    testShortestPath();
+//    testShortestPath();*/
+
+    // 有权图之后的测试函数 (添加 Edge.h)
+
+    // test Weight Dense Graph
+    testWeightGraph();
+
     return 0;
 }
