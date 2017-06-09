@@ -36,8 +36,6 @@ algorithm
 cassert
 -
 
-<<<<<<< HEAD
-=======
 G:/zhangsiqi/Github/DataStructureWork/KruskalMST.h
 iostream
 -
@@ -156,9 +154,6 @@ LazyPrimMST.h
 G:/zhangsiqi/Github/DataStructureWork/LazyPrimMST.h
 PrimMST.h
 G:/zhangsiqi/Github/DataStructureWork/PrimMST.h
-<<<<<<< HEAD
-=======
 KruskalMST.h
 G:/zhangsiqi/Github/DataStructureWork/KruskalMST.h
->>>>>>> refs/remotes/origin/Add-MST
 
