@@ -15,6 +15,8 @@
 #include "Component.h"
 #include "Path.h"
 #include "LazyPrimMST.h"
+#include "PrimMST.h"
+
 // 有权图之前的测试函数
 
 /*
@@ -166,5 +168,15 @@ void testLazyPrimMST() {
         cout << mst[i] << endl;
     cout << "The MST weight is: " << lazyPrimMST.result() << endl;
     cout << endl;
+
+    // Test Prim MST
+    cout << "Test Prim MST: " << endl;
+    PrimMST<SparseGraph<double>, double> primMST(g);
+    mst = primMST.mstEdges();
+    for (int i = 0; i < mst.size(); ++i)
+        cout << mst[i] << endl;
+    cout << "The MST weight is: " << primMST.result() << endl;
+    cout << endl;
 }
+
 #endif //DATASTRUCTUREWORK_TESTFUNCTION_H

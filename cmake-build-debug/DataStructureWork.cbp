@@ -101,6 +101,9 @@
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/Path.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
+		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/PrimMST.h">
+			<Option target="DataStructureWork"/>
+		</Unit>
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/ReadGraph.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
