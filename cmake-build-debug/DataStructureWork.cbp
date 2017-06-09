@@ -89,6 +89,9 @@
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/Edge.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
+		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/IndexMinHeap.h">
+			<Option target="DataStructureWork"/>
+		</Unit>
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/LazyPrimMST.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
