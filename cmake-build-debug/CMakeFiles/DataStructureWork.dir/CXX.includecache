@@ -36,6 +36,21 @@ algorithm
 cassert
 -
 
+<<<<<<< HEAD
+=======
+G:/zhangsiqi/Github/DataStructureWork/KruskalMST.h
+iostream
+-
+vector
+-
+MainHeap.h
+G:/zhangsiqi/Github/DataStructureWork/MainHeap.h
+UnionFind.h
+G:/zhangsiqi/Github/DataStructureWork/UnionFind.h
+Edge.h
+G:/zhangsiqi/Github/DataStructureWork/Edge.h
+
+>>>>>>> refs/remotes/origin/Add-MST
 G:/zhangsiqi/Github/DataStructureWork/LazyPrimMST.h
 iostream
 -
@@ -106,6 +121,12 @@ cassert
 Edge.h
 G:/zhangsiqi/Github/DataStructureWork/Edge.h
 
+G:/zhangsiqi/Github/DataStructureWork/UnionFind.h
+iostream
+-
+cassert
+-
+
 G:/zhangsiqi/Github/DataStructureWork/main.cpp
 iostream
 -
@@ -135,4 +156,9 @@ LazyPrimMST.h
 G:/zhangsiqi/Github/DataStructureWork/LazyPrimMST.h
 PrimMST.h
 G:/zhangsiqi/Github/DataStructureWork/PrimMST.h
+<<<<<<< HEAD
+=======
+KruskalMST.h
+G:/zhangsiqi/Github/DataStructureWork/KruskalMST.h
+>>>>>>> refs/remotes/origin/Add-MST
 

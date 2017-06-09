@@ -6,6 +6,10 @@ CMakeFiles/DataStructureWork.dir/main.cpp.obj
  G:/zhangsiqi/Github/DataStructureWork/DenseGraph.h
  G:/zhangsiqi/Github/DataStructureWork/Edge.h
  G:/zhangsiqi/Github/DataStructureWork/IndexMinHeap.h
+<<<<<<< HEAD
+=======
+ G:/zhangsiqi/Github/DataStructureWork/KruskalMST.h
+>>>>>>> refs/remotes/origin/Add-MST
  G:/zhangsiqi/Github/DataStructureWork/LazyPrimMST.h
  G:/zhangsiqi/Github/DataStructureWork/MainHeap.h
  G:/zhangsiqi/Github/DataStructureWork/Path.h
@@ -13,5 +17,6 @@ CMakeFiles/DataStructureWork.dir/main.cpp.obj
  G:/zhangsiqi/Github/DataStructureWork/ReadGraph.h
  G:/zhangsiqi/Github/DataStructureWork/ShortestPath.h
  G:/zhangsiqi/Github/DataStructureWork/SparseGraph.h
+ G:/zhangsiqi/Github/DataStructureWork/UnionFind.h
  G:/zhangsiqi/Github/DataStructureWork/main.cpp
  G:/zhangsiqi/Github/DataStructureWork/testFunction.h

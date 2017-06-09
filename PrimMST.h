@@ -17,6 +17,8 @@ template<typename Graph, typename Weight>
 class PrimMST {
 
 private:
+
+
     Graph &G;
     IndexMinHeap<Weight> ipq; // 存储和每个节点相邻的权值
     vector<Edge<Weight> *> edgeTo; // 存储和每个节点相邻的节点的横切边
@@ -44,15 +46,7 @@ private:
         }
     }
 
-public:
-    PrimMST(Graph &graph) : G(graph), ipq(IndexMinHeap<double>(graph.V())) {
-
-        marked = new bool[G.V()];
-        for (int i = 0; i < G.V(); ++i) {
-            marked[i] = false;
-            edgeTo.push_back(NULL);
-        }
-
+    void AddPrimMST() {
         mst.clear();
         // Prim
         visit(0);
@@ -66,6 +60,19 @@ public:
         mstWeight = mst[0].wt();
         for (int i = 1; i < mst.size(); ++i)
             mstWeight += mst[i].wt();
+    }
+
+public:
+    PrimMST(Graph &graph) : G(graph), ipq(IndexMinHeap<double>(graph.V())) {
+
+        marked = new bool[G.V()];
+        for (int i = 0; i < G.V(); ++i) {
+            marked[i] = false;
+            edgeTo.push_back(NULL);
+        }
+
+        AddPrimMST();
+
     }
 
     ~PrimMST() {

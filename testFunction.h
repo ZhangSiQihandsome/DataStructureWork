@@ -16,6 +16,7 @@
 #include "Path.h"
 #include "LazyPrimMST.h"
 #include "PrimMST.h"
+#include "KruskalMST.h"
 
 // 有权图之前的测试函数
 
@@ -152,7 +153,7 @@ void testWeightGraph() {
     cout << endl;
 }
 
-// test Lazy Prim MST
+// test  Prim AND Kruskal MST
 void testLazyPrimMST() {
 
     string filename = "testG3.txt";
@@ -177,6 +178,15 @@ void testLazyPrimMST() {
         cout << mst[i] << endl;
     cout << "The MST weight is: " << primMST.result() << endl;
     cout << endl;
+
+    // Test Kruskal MST
+    cout << "Test Kruskal MST: " << endl;
+    KruskalMST<SparseGraph<double>, double> kruskalMST(g);
+    mst = kruskalMST.mstEdges();
+    for (int i = 0; i < mst.size(); ++i)
+        cout << mst[i] << endl;
+    cout << "Test MST Weight is: " << kruskalMST.result() << endl;
+
 }
 
 #endif //DATASTRUCTUREWORK_TESTFUNCTION_H
