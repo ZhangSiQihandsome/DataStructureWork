@@ -14,7 +14,7 @@
 #include "ReadGraph.h"
 #include "Component.h"
 #include "Path.h"
-
+#include "LazyPrimMST.h"
 // 有权图之前的测试函数
 
 /*
@@ -130,6 +130,8 @@ void testShortestPath() {
 }*/
 
 // 有权图之后的测试函数 (添加 Edge.h)
+
+// testWeightGraph
 void testWeightGraph() {
     string filename = "testG3.txt";
     int V = 8;
@@ -148,4 +150,22 @@ void testWeightGraph() {
     cout << endl;
 }
 
+// test Lazy Prim MST
+void testLazyPrimMST() {
+
+    string filename = "testG3.txt";
+    int V = 8;
+    SparseGraph<double> g = SparseGraph<double>(V, false);
+    ReadGraph<SparseGraph<double>, double> readGraph(g, filename);
+
+    // Test Lazy Prim MST
+    cout << "Test Lazy Prim MST: " << endl;
+    LazyPrimMST<SparseGraph<double>, double> lazyPrimMST(g);
+    vector<Edge<double>> mst = lazyPrimMST.mstEdges();
+    for (int i = 0; i < mst.size(); i++)
+        cout << mst[i] << endl;
+    cout << "The MST weight is: " << lazyPrimMST.result() << endl;
+    cout << endl;
+
+};
 #endif //DATASTRUCTUREWORK_TESTFUNCTION_H

@@ -26,7 +26,9 @@ int main() {
     // 有权图之后的测试函数 (添加 Edge.h)
 
     // test Weight Dense Graph
-    testWeightGraph();
+//    testWeightGraph();
 
+    // test Lazy Prim MST
+    testLazyPrimMST();
     return 0;
 }

@@ -89,6 +89,12 @@
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/Edge.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
+		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/LazyPrimMST.h">
+			<Option target="DataStructureWork"/>
+		</Unit>
+		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/MainHeap.h">
+			<Option target="DataStructureWork"/>
+		</Unit>
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/Path.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
