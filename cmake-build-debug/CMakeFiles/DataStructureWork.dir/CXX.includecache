@@ -28,6 +28,22 @@ iostream
 cassert
 -
 
+G:/zhangsiqi/Github/DataStructureWork/LazyPrimMST.h
+iostream
+-
+MainHeap.h
+G:/zhangsiqi/Github/DataStructureWork/MainHeap.h
+Edge.h
+G:/zhangsiqi/Github/DataStructureWork/Edge.h
+
+G:/zhangsiqi/Github/DataStructureWork/MainHeap.h
+iostream
+-
+algorithm
+-
+cassert
+-
+
 G:/zhangsiqi/Github/DataStructureWork/Path.h
 iostream
 -
@@ -95,4 +111,6 @@ Component.h
 G:/zhangsiqi/Github/DataStructureWork/Component.h
 Path.h
 G:/zhangsiqi/Github/DataStructureWork/Path.h
+LazyPrimMST.h
+G:/zhangsiqi/Github/DataStructureWork/LazyPrimMST.h
 

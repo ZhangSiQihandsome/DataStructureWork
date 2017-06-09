@@ -166,6 +166,5 @@ void testLazyPrimMST() {
         cout << mst[i] << endl;
     cout << "The MST weight is: " << lazyPrimMST.result() << endl;
     cout << endl;
-
-};
+}
 #endif //DATASTRUCTUREWORK_TESTFUNCTION_H
