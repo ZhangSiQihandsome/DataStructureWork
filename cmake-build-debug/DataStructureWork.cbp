@@ -92,6 +92,9 @@
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/IndexMinHeap.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
+		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/KruskalMST.h">
+			<Option target="DataStructureWork"/>
+		</Unit>
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/LazyPrimMST.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
@@ -111,6 +114,9 @@
 			<Option target="DataStructureWork"/>
 		</Unit>
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/SparseGraph.h">
+			<Option target="DataStructureWork"/>
+		</Unit>
+		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/UnionFind.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/main.cpp">
