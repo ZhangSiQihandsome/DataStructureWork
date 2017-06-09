@@ -30,16 +30,7 @@ private:
         }
     }
 
-public:
-    Component(Graph &graph) : G(graph) {
-        visited = new bool[G.V()];
-        ccount = 0;
-        id = new int[G.V()];
-        for (int i = 0; i < G.V(); ++i) {
-            visited[i] = false;
-            id[i] = -1;
-        }
-        // 从第0个节点开始遍历
+    void HeadDfs() {// 从第0个节点开始遍历
         for (int i = 0; i < G.V(); ++i) {
             // 如果当前节点没被访问过则进行一次深度遍历
             if (!visited[i]) {
@@ -49,6 +40,21 @@ public:
                 ccount++;
             }
         }
+    }
+
+public:
+
+    Component(Graph &graph) : G(graph) {
+        visited = new bool[G.V()];
+        ccount = 0;
+        id = new int[G.V()];
+        for (int i = 0; i < G.V(); ++i) {
+            visited[i] = false;
+            id[i] = -1;
+        }
+
+        // 对图进行深度优先遍历
+        HeadDfs();
     }
 
     ~Component() {

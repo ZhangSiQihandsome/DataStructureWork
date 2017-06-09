@@ -22,22 +22,7 @@ private:
     int *from;
     int *ord;
 
-public:
-    ShortestPath(Graph &graph, int s) : G(graph) {
-        assert(s >= 0 && s < G.V());
-        visited = new bool[G.V()];
-        from = new int[G.V()];
-        int *ord = new int[G.V()];
-        for (int i = 0; i < G.V(); ++i) {
-            visited[i] = false;
-            from[i] = -1;
-            ord[i] = -1;
-        }
-        this->s = s;
-
-        queue<int> q;
-
-        // 无向图最短路径算法
+    void shortestPath(int s, int *ord, queue<int> &q) const {// 无向图最短路径算法
         q.push(s); // 将原点放入队列中
         visited[s] = true;  // 原点已被访问过
         ord[s] = 0; // 原点到原点的距离为0
@@ -61,6 +46,27 @@ public:
                 }
             }
         }
+    }
+
+public:
+
+    ShortestPath(Graph &graph, int s) : G(graph) {
+        assert(s >= 0 && s < G.V());
+        visited = new bool[G.V()];
+        from = new int[G.V()];
+        int *ord = new int[G.V()];
+        for (int i = 0; i < G.V(); ++i) {
+            visited[i] = false;
+            from[i] = -1;
+            ord[i] = -1;
+        }
+        this->s = s;
+
+        queue<int> q;
+
+        // 从构造函数中调用最短路径算法 (广度优先)
+        shortestPath(s, ord, q);
+
     }
 
     ~ShortestPath() {
