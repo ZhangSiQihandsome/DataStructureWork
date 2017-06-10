@@ -17,6 +17,7 @@
 #include "LazyPrimMST.h"
 #include "PrimMST.h"
 #include "KruskalMST.h"
+#include "Dijkstra.h"
 
 // 有权图之前的测试函数
 
@@ -187,6 +188,23 @@ void testLazyPrimMST() {
         cout << mst[i] << endl;
     cout << "Test MST Weight is: " << kruskalMST.result() << endl;
 
+}
+
+
+void testDijkstra() {
+
+    string filename = "testG4.txt";
+    int V = 5;
+    SparseGraph<int> g = SparseGraph<int>(V, true); // 有向图
+//    SparseGraph<int> g = SparseGraph<int>(V, false); // 无向图
+    ReadGraph<SparseGraph<int>, int> readGraph(g, filename);
+    cout << "Test Dijkstra: " << endl;
+    Dijsktra<SparseGraph<int>, int> dij(g, 0);
+    for (int i = 1; i < V; i++) {
+        cout << "Shortest Path to " << i << " : " << dij.shortestPathTo(i) << endl;
+        dij.showPath(i);
+        cout << "---------" << endl;
+    }
 }
 
 #endif //DATASTRUCTUREWORK_TESTFUNCTION_H

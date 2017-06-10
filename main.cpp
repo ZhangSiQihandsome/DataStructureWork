@@ -29,6 +29,9 @@ int main() {
 //    testWeightGraph();
 
     // test Lazy Prim MST
-    testLazyPrimMST();
+//    testLazyPrimMST();
+
+    // test Dijkstra
+    testDijkstra();
     return 0;
 }

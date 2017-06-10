@@ -86,6 +86,9 @@
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/DenseGraph.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
+		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/Dijkstra.h">
+			<Option target="DataStructureWork"/>
+		</Unit>
 		<Unit filename="G:/zhangsiqi/Github/DataStructureWork/Edge.h">
 			<Option target="DataStructureWork"/>
 		</Unit>
