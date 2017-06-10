@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+G:/zhangsiqi/Github/DataStructureWork/BellmanFord.h
+stack
+-
+vector
+-
+Edge.h
+G:/zhangsiqi/Github/DataStructureWork/Edge.h
+
 G:/zhangsiqi/Github/DataStructureWork/Component.h
 iostream
 -
@@ -169,4 +177,6 @@ KruskalMST.h
 G:/zhangsiqi/Github/DataStructureWork/KruskalMST.h
 Dijkstra.h
 G:/zhangsiqi/Github/DataStructureWork/Dijkstra.h
+BellmanFord.h
+G:/zhangsiqi/Github/DataStructureWork/BellmanFord.h
 
