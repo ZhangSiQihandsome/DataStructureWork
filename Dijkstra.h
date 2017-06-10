@@ -23,25 +23,13 @@ private:
     bool *marked;  // 存储节点的状态
     vector<Edge<Weight> *> from; // 存放个个顶点的最短路径边
 
-public:
-    Dijsktra(Graph &graph, int s) : G(graph) {
-        this->s = s;
-        distTo = new Weight[G.V()];
-        marked = new bool[G.V()];
-        for (int i = 0; i < G.V(); ++i) {
-            distTo[i] = Weight();
-            marked[i] = false;
-            from.push_back(NULL);
-        }
-        IndexMinHeap<Weight> ipq(G.V());
-
-        // Dijkstra
+    void doDijkstra(int s, IndexMinHeap<Weight> &ipq) const {// Dijkstra
         distTo[s] = Weight();  // 到原点的距离设为初始值
         marked[s] = true;     // 原点已被访问过
         ipq.insert(s, distTo[s]); // 插入原点和到原点的距离
         while (!ipq.isEmpty()) {
 
-            int v = ipq.extractMinIndex(); // 在第一次中取出原点
+            int v = ipq.extractMinIndex(); // 每一次取出距离最小的点 ,在第一次中取出原点
 
             // disTo[v] 就是s 到 v 的最短距离
             marked[v] = true;  // 在第一次中再次将原点设为访问过
@@ -62,32 +50,24 @@ public:
                 }
             }
         }
+    }
 
-        /*// start dijkstra
-        distTo[s] = Weight();
-        ipq.insert(s, distTo[s] );
-        marked[s] = true;
-        while( !ipq.isEmpty() ){
-            int v = ipq.extractMinIndex();
+public:
 
-            // distTo[v]就是s到v的最短距离
-            marked[v] = true;
-            //cout<<v<<endl;
-            typename Graph::adjIterator adj(G, v);
-            for( Edge<Weight>* e = adj.begin() ; !adj.end() ; e = adj.next() ){
-                int w = e->other(v);
-                if( !marked[w] ){
-                    if( from[w] == NULL || distTo[v] + e->wt() < distTo[w] ){
-                        distTo[w] = distTo[v] + e->wt();
-                        from[w] = e;
-                        if( ipq.contain(w) )
-                            ipq.change(w, distTo[w] );
-                        else
-                            ipq.insert(w, distTo[w] );
-                    }
-                }
-            }
-        }*/
+    Dijsktra(Graph &graph, int s) : G(graph) {
+        this->s = s;
+        distTo = new Weight[G.V()];
+        marked = new bool[G.V()];
+        for (int i = 0; i < G.V(); ++i) {
+            distTo[i] = Weight();
+            marked[i] = false;
+            from.push_back(NULL);
+        }
+        IndexMinHeap<Weight> ipq(G.V());
+
+        // Dijkstra
+        doDijkstra(s, ipq);
+
     }
 
     ~Dijsktra() {
