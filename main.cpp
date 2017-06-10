@@ -33,5 +33,8 @@ int main() {
 
     // test Dijkstra
     testDijkstra();
+
+    // test BellmanFord
+    testBellmanFord();
     return 0;
 }
