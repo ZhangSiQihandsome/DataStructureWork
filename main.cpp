@@ -35,6 +35,6 @@ int main() {
     testDijkstra();
 
     // test BellmanFord
-//    testBellmanFord();
+    testBellmanFord();
     return 0;
 }
