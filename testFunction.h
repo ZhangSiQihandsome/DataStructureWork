@@ -194,8 +194,11 @@ void testLazyPrimMST() {
 
 void testDijkstra() {
 
-    string filename = "testG4.txt";
-    int V = 5;
+    string filename = "testG6.txt";
+    int V = 16;
+
+/*    string filename = "testG4.txt";
+    int V = 5;*/
     SparseGraph<int> g = SparseGraph<int>(V, true); // 有向图
 //    SparseGraph<int> g = SparseGraph<int>(V, false); // 无向图
     ReadGraph<SparseGraph<int>, int> readGraph(g, filename);
@@ -209,9 +212,11 @@ void testDijkstra() {
 }
 
 void testBellmanFord(){
-    string filename = "testG5.txt";
+    /*string filename = "testG5.txt";
     //string filename = "testG_negative_circle.txt";
-    int V = 5;
+    int V = 5;*/
+    string filename = "testG6.txt";
+    int V = 16;
 
     SparseGraph<int> g = SparseGraph<int>(V, true);
     ReadGraph<SparseGraph<int>, int> readGraph(g, filename);

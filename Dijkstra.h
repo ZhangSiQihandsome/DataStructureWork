@@ -83,35 +83,35 @@ public:
         return marked[w];
     }
 
-    void shortestPath(int w, vector<Edge<Weight>> &vec) {
+    void shortestPath( int w, vector<Edge<Weight>> &vec ){
 
-        stack<Edge<Weight> *> s;
+        assert( w >= 0 && w < G.V() );
 
-        Edge<Weight> *p = from[w];
-        while ( p->v() != this->s) {  // 没有到原点
-            s.push(p);
-            p = from[p->v()];
+        stack<Edge<Weight>*> s;
+        Edge<Weight> *e = from[w];
+        while( e->v() != this->s ){
+            s.push(e);
+            e = from[e->v()];
         }
+        s.push(e);
 
-        vec.clear();
-        while (!s.empty()) {
-            p = s.top();
-            vec.push_back(*p);
+        while( !s.empty() ){
+            e = s.top();
+            vec.push_back( *e );
             s.pop();
         }
     }
 
-    void showPath(int w) {
+    void showPath(int w){
 
-        assert(w >= 0 && w < G.V());
+        assert( w >= 0 && w < G.V() );
 
         vector<Edge<Weight>> vec;
         shortestPath(w, vec);
-        cout << s << "-->";
-        for (int i = 0; i < vec.size(); ++i) {
-            cout << vec[i].v() << "-->";
-            if (i == vec.size() - 1)
-                cout << vec[i].w() << endl;
+        for( int i = 0 ; i < vec.size() ; i ++ ){
+            cout<<vec[i].v()<<" -> ";
+            if( i == vec.size()-1 )
+                cout<<vec[i].w()<<endl;
         }
     }
 
