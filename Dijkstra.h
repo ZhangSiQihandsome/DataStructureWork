@@ -23,7 +23,7 @@ private:
     bool *marked;  // 存储节点的状态
     vector<Edge<Weight> *> from; // 存放个个顶点的最短路径边
 
-    void doDijkstra(int s, IndexMinHeap<Weight> &ipq) const {// Dijkstra
+    void doDijkstra(int s, IndexMinHeap<Weight> &ipq) {// Dijkstra
         distTo[s] = Weight();  // 到原点的距离设为初始值
         marked[s] = true;     // 原点已被访问过
         ipq.insert(s, distTo[s]); // 插入原点和到原点的距离
